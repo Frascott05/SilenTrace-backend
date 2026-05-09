@@ -2,7 +2,7 @@
 Backend APIs of the SilenTrace project to use with some AI agent
 
 
-#.env configurations
+# .env configurations
 APP_NAME=SilentraceGUI
 
 VOLATILITY_PATH=/opt/volatility3/vol.py
