@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  silentrace:
+    build: .
+
+    container_name: silentraceAGENT
+
+    ports:
+      - "9000:9000"
+
+    volumes:
+      # dati persistenti
+      - ./dumps:/home/app/SilenTrace/dumps
+
+      # env esterno
+      - ./.env:/home/app/SilenTrace/.env
+
+      #start.sh script
+      - ./start.sh:/home/app/SilenTrace/start.sh
+
+      #codice sorgente
+      - ./backend:/home/app/SilenTrace/backend
+
+    working_dir: /home/app/SilenTrace
+
+    stdin_open: true
+    tty: true
