@@ -17,7 +17,7 @@ DUMPS_PATH=/home/app/SilenTrace/dumps
 ALLOWED_ORIGINS=*
 PORT_BACKEND=9000
 ```
-NOTE: you have to install Volatility3 and set the path in the .env file
+NOTE: If you don't use docker, you have to install Volatility3 and set the path in the .env file
 
 ### dumps folder
 As you can see from the `.env` file there is a path for the folder that will contain the dumps to analyze. It is Imperative that the folder
