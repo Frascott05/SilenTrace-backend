@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Carica variabili dal .env
+# Loads variables from .env
 export $(grep -v '^#' .env | xargs)
 
 # Setup backend (Python)
@@ -10,7 +10,7 @@ echo "Installazione dipendenze backend..."
     pip install -r requirements.txt --break-system-packages
 )
 
-# Avvia il backend FastAPI
+# Start the backend FastAPI
 echo "Avvio backend..."
 (
     cd backend || exit
