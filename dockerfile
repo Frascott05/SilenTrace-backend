@@ -25,12 +25,8 @@ RUN git clone https://github.com/Frascott05/volatility3 /opt/volatility3
 
 #ENV PYTHONPATH="/opt/volatility3"
 
-
-
-
 WORKDIR /home/app/SilenTrace/
-RUN chmod +x /home/app/SilenTrace/start.sh
-
+#RUN chmod +x /home/app/SilenTrace/start.sh
 
 # Porta FastAPI
 EXPOSE 9000
