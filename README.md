@@ -21,16 +21,7 @@ NOTE: you have to install Volatility3 and set the path in the .env file
 
 ### dumps folder
 As you can see from the `.env` file there is a path for the folder that will contain the dumps to analyze. It is Imperative that the folder
-is in the same root as the backend folder:
-
-|
-
-|- backend
-
-|- dumps
-    | example.mem
-    | -investigation1
-        | first.vmem
+is in the same root as the backend folder
 
 ### docker commands
 To use the docker files create the image with the following command:
